@@ -84,7 +84,8 @@ const handleSubmit = async (e) => {
   // messageDiv.innerHTML = "..."
   loader(messageDiv);
 
-  const response = await fetch("https://localhost:5000", {
+  // deploy backend using render.com and we will also need vercel.com to deploy frontend
+  const response = await fetch("https://codex-1qqf.onrender.com", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
